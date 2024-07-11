@@ -1,25 +1,6 @@
-#title {
+#title{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-}
-#resources{
-    max-width: 20%;
-    max-height: auto;
-}
-#enter{
-    max-width: 20%;
-    max-height: auto;
-}
-button{
-    border: none;
-    padding: 1px 1px;
-    text-align: center;
-    text-decoration: none;
-    float:left;
-    font-size: 1px;
-    margin: 1px 1px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+    width: 30%;
 }

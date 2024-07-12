@@ -3,6 +3,13 @@ let weed;
 //cords
 let height = window.innerHeight; //height of the window
 let width = window.innerWidth; //width of the window
+let gardenBase;
+let halfWeed;
+
+function preload(){
+  gardenBase = loadImage('./images/gardenBaseBG.png');
+  halfWeed= loadImage('./images/halfWeed.png');
+}
 
 //canvas creation (set up to window)
 function setup() {
@@ -14,7 +21,7 @@ function setup() {
 //canvas draws (draws the weed)
 function draw() {
   //green background
-  background(67, 148, 75);
+  background(gardenBase);
   //draws weed
   drawWeed(weed.x, weed.y);
   //cursor
@@ -30,13 +37,13 @@ function draw() {
 
 //new weed spawn
 function initializeWeed() {
-  weed = {x: random(0, width - 60), y: random(0, height - 60)};
+  weed = {x: random(420, width - 420), y: random(100, height - 100)};
 }//end of initializeWeed func
 
 //draws the 420
 function drawWeed(x, y) {
   textSize(60);
-  text("🌿", x, y);
+  text('🌿', x, y);
 }//end of drawWeed func
 
 //checks if user is over the weed
